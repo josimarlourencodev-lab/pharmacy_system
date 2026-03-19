@@ -5,3 +5,7 @@ produto_router = APIRouter(prefix="/produto", tags=["produto"])
 @produto_router.get("/")
 async def produto():
     return {"mensagem": "Você acessou a rota de produtos"}
+
+@produto_router("/listar")
+async def listar():
+    text = ()
