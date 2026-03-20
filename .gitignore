@@ -502,3 +502,20 @@ docs/_book
 test/
 
 # End of https://www.toptal.com/developers/gitignore/api/django,laravel,node,python,react,vue,angular,java
+
+# encv e pycache
+
+.venv/
+__pycache__/
+*.pyc  
+
+#####sqlite####
+*.db
+*.bat
+*.exp
+*.pdb
+*.dll
+*.a
+*.so
+*.db-shm
+*.db-wal

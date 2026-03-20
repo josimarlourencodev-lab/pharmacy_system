@@ -1,7 +1,7 @@
 USE jinpdv;
 
 CREATE TABLE produtos(
-id_produto INT AUTO_INCREMENT PRIMARY KEY,
+id INT AUTO_INCREMENT PRIMARY KEY,
 linha INT,
 coluna INT,
 medicamento VARCHAR(50),
