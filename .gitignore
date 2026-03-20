@@ -507,4 +507,15 @@ test/
 
 .venv/
 __pycache__/
-*.pyc
+*.pyc  
+
+#####sqlite####
+*.db
+*.bat
+*.exp
+*.pdb
+*.dll
+*.a
+*.so
+*.db-shm
+*.db-wal
