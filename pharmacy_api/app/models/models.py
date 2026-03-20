@@ -2,7 +2,7 @@ from sqlalchemy import Integer, String, Text, Float, Date
 from sqlalchemy.orm import Mapped, mapped_column
 from .database import Base  # chamando Base = declarative_base() do database.py
 
-class Produto(Base):  # esse é a tabela produto 
+class Produto(Base):  # esse é a tabela produtos 
     __tablename__ = 'produtos'
 
     id_produto: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
