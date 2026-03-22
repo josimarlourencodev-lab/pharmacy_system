@@ -113,7 +113,8 @@ poetry remove fastapi
 ### ▶️ Executar o projeto
 
 ```bash
-poetry run uvicorn app.main:app --reload
+poetry run uvicorn app.api.main:app --reload
+
 ```
 
 ---
