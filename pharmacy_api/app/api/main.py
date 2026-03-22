@@ -5,7 +5,7 @@ from app.models.models import Produto
 
 app = FastAPI()
 
-Base.metadata.create_all(bind=engine)
+#Base.metadata.create_all(bind=engine)
 
 from app.routes.produto_routes import produto_router
 
