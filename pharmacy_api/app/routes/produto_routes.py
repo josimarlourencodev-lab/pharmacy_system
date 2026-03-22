@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException, Depends
-from app.schemas.Produto_Schema import ProdutoResponse, ProdutoCreate
+from app.schemas.Produto_Schema import ProdutoResponse, ProdutoCreate , Produto , ProdutoUpdate
 from sqlalchemy.orm import Session
 from app.DB.get_db import  get_db
 from app.models.models import Produto
@@ -26,4 +26,17 @@ def criar_produto(produto: ProdutoCreate, db:Session = Depends(get_db)):
     db.add(produto_novo)
     db.commit()
     db.refresh(produto_novo)
-    return produto_novo   
+    return produto_novo     
+
+"""@produto_router.put("/atualizar/", response_model=ProdutoResponse)  isso não está funcionado eu não sei o porque ainda não sei como resolver
+def atualizar_produto(produto:int, db:Session = Depends(get_db)):
+    produto_atualizar = db.query(produto).filter(Produto.id == produto).first()
+    if not produto:
+        raise HTTPException(status_code=404, detail="Produto does not found!")
+
+    for field, value in ProdutoUpdate.dict(exclude_unset=True).items():
+        setattr(produto, field, value)
+
+    db.commit()
+    db.refresh(produto)
+    return produto    """
