@@ -102,7 +102,7 @@ poetry add pytest --group dev
 
 ---
 
-### ❌ Remover dependência
+### ❌ Remover dependência ☢️
 
 ```bash
 poetry remove fastapi
