@@ -3,7 +3,7 @@ name = "pharmacy-api"
 version = "0.1.0"
 description = "API de gerenciamento de farmácia com foco em estoque, vendas e logística, preparada para consumo por aplicações frontend."
 authors = [
-    {name = "josimar lourenço dev",email = "josimarlourencodev@gmail.com"}
+    {name = "josimar lourenço dev",email = ""}
 ]
 requires-python = ">=3.12"
 dependencies = [
